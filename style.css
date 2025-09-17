@@ -1,23 +1,18 @@
-/* Hero section font family */
-.hero, .hero-text, .hero-title, .hero-subtitle {
-  font-family: 'Poppins', sans-serif;
-}
-/* Header font family */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Inter', sans-serif;
-}
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body */
 body {
   background: #000;
   color: #fff;
   font-family: "Poppins", sans-serif;
 }
 
+/* Navbar */
 .navbar {
   background: #111;
   padding: 15px 40px;
@@ -87,6 +82,7 @@ body {
   gap: 20px;
 }
 
+/* Hero Section */
 .hero {
   display: flex;
   justify-content: space-between;
@@ -153,7 +149,6 @@ body {
   z-index: 1;
 }
 
-
 .btn .arrow-circle {
   display: flex;
   align-items: center;
@@ -196,6 +191,92 @@ body {
   transition: transform 0.4s cubic-bezier(0.4,0,0.2,1);
 }
 
+/* Footer */
+footer {
+  background: #222;
+  padding: 32px 0;
+  color: #fff;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.footer-left, .footer-right {
+  flex: 1;
+}
+
+.footer-heading {
+  color: #e53935;
+  margin-bottom: 16px;
+}
+
+.footer-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-contact li {
+  margin-bottom: 8px;
+}
+
+.footer-contact a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-contact a:hover {
+  color: #e53935;
+}
+
+.footer-right-align {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 24px;
+  text-align: right;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.social-links i {
+  font-size: 2rem;
+  color: #fff;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-links a:hover i.fa-instagram {
+  color: #E1306C;
+  transform: scale(1.2);
+}
+
+.social-links a:hover i.fa-twitter {
+  color: #1DA1F2;
+  transform: scale(1.2);
+}
+
+/* Fonts */
+.hero, .hero-text, .hero-title, .hero-subtitle {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
   .nav-menu {
     display: none;
@@ -218,5 +299,18 @@ body {
 
   .hero-image {
     margin-top: 30px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-right-align {
+    align-items: center;
+    text-align: center;
+    padding-right: 0;
+    margin-top: 20px;
   }
 }
