@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Gallery - KPP BMS 2025</title>
+    
+    <!-- Link to existing stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-red': '#e53935',
+                        'dark-bg': '#000',
+                        'dark-card': '#111',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS for portfolio links -->
+    <style>
+        .portfolio-item {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .portfolio-item:hover {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .portfolio-item:visited {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .portfolio-item:focus {
+            outline: 2px solid #e53935;
+            outline-offset: 2px;
+            border-radius: 8px;
+        }
+    </style>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-dark-bg text-white font-poppins">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">
+            KPP<span>BMS</span>
+        </a>
+        <div class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html" class="text-primary-red">Portfolio</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+        <!-- Page Header -->
+        <header class="text-center mb-16">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+                Portfolio Gallery
+            </h1>
+            <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                Explore the creative works and projects from our talented team members. 
+                Each portfolio showcases unique skills and innovative solutions.
+            </p>
+        </header>
+
+        <!-- Portfolio Sections -->
+        <div class="space-y-24">
+            
+            <!-- Sarah Chen - UI/UX Designer -->
+            <section class="portfolio-section">
+                <h2 class="text-4xl font-bold mb-8 text-center border-b-2 border-primary-red pb-4 inline-block">
+                    Ahmad Yafi Ar Rizq
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <a href="https://www.figma.com/design/3BsDeeGNsjCLDVYCSbPM4p/BMS-HMIT---Basics-of-Design?node-id=0-1&p=f" target="_blank" class="portfolio-item group block">
+                        <article>
+                            <div class="relative overflow-hidden rounded-lg bg-dark-card p-6 transition-transform duration-300 group-hover:scale-105">
+                                <div class="w-full h-48 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg mb-4 flex items-center justify-center">
+                                    <span class="text-white font-semibold text-lg">Figma Design</span>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Figma Design</h3>
+                                <p class="text-gray-400 text-sm">
+                                    Interactive prototypes and wireframes created in Figma for modern web applications.
+                                </p>
+                            </div>
+                        </article>
+                    </a>
+                    
+                    <a href="https://github.com/yafiar/BMS-IT-2025" target="_blank" class="portfolio-item group block">
+                        <article>
+                            <div class="relative overflow-hidden rounded-lg bg-dark-card p-6 transition-transform duration-300 group-hover:scale-105">
+                                <div class="w-full h-48 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg mb-4 flex items-center justify-center">
+                                    <span class="text-white font-semibold text-lg">Website</span>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Website</h3>
+                                <p class="text-gray-400 text-sm">
+                                    Responsive and modern portfolio website with clean design.
+                                </p>
+                            </div>
+                        </article>
+                    </a>
+                    
+                    <a href="https://www.youtube.com" target="_blank" class="portfolio-item group block">
+                        <article>
+                            <div class="relative overflow-hidden rounded-lg bg-dark-card p-6 transition-transform duration-300 group-hover:scale-105">
+                                <div class="w-full h-48 bg-gradient-to-br from-green-500 to-emerald-500 rounded-lg mb-4 flex items-center justify-center">
+                                    <span class="text-white font-semibold text-lg">Video</span>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Video</h3>
+                                <p class="text-gray-400 text-sm">
+                                    Creative video production and editing for promotional content and presentations.
+                                </p>
+                            </div>
+                        </article>
+                    </a>
+                    
+                    <a href="https://medium.com" target="_blank" class="portfolio-item group block">
+                        <article>
+                            <div class="relative overflow-hidden rounded-lg bg-dark-card p-6 transition-transform duration-300 group-hover:scale-105">
+                                <div class="w-full h-48 bg-gradient-to-br from-orange-500 to-red-500 rounded-lg mb-4 flex items-center justify-center">
+                                    <span class="text-white font-semibold text-lg">Content</span>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Content</h3>
+                                <p class="text-gray-400 text-sm">
+                                    Engaging content creation including copywriting, social media, and digital marketing materials.
+                                </p>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Marcus Johnson - Full Stack Developer -->
+            <section class="portfolio-section">
+                <h2 class="text-4xl font-bold mb-8 text-center border-b-2 border-primary-red pb-4 inline-block">
+                    Bayu Kurniawan
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <a href="https://www.figma.com/design/3BsDeeGNsjCLDVYCSbPM4p/BMS-HMIT---Basics-of-Design?node-id=0-1&p=f" target="_blank" class="portfolio-item group block">
+                        <article>
+                            <div class="relative overflow-hidden rounded-lg bg-dark-card p-6 transition-transform duration-300 group-hover:scale-105">
+                                <div class="w-full h-48 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-lg mb-4 flex items-center justify-center">
+                                    <span class="text-white font-semibold text-lg">Figma Design</span>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Figma Design</h3>
+                                <p class="text-gray-400 text-sm">
+                                    Interactive prototypes and wireframes created in Figma for modern web applications.
+                                </p>
+                            </div>
+                        </article>
+                    </a>
+                    
+                    <a href="https://github.com" target="_blank" class="portfolio-item group block">
+                        <article>
+                            <div class="relative overflow-hidden rounded-lg bg-dark-card p-6 transition-transform duration-300 group-hover:scale-105">
+                                <div class="w-full h-48 bg-gradient-to-br from-teal-500 to-blue-500 rounded-lg mb-4 flex items-center justify-center">
+                                    <span class="text-white font-semibold text-lg">Website</span>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Website</h3>
+                                <p class="text-gray-400 text-sm">
+                                    Responsive and modern portfolio website with clean design.
+                                </p>
+                            </div>
+                        </article>
+                    </a>
+                    
+                    <a href="https://drive.google.com/file/d/1qNGVcKnulDNN1uZzAhV7GCpswisvxLr7/view?usp=sharing" target="_blank" class="portfolio-item group block">
+                        <article>
+                            <div class="relative overflow-hidden rounded-lg bg-dark-card p-6 transition-transform duration-300 group-hover:scale-105">
+                                <div class="w-full h-48 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-lg mb-4 flex items-center justify-center">
+                                    <span class="text-white font-semibold text-lg">Video</span>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Video</h3>
+                                <p class="text-gray-400 text-sm">
+                                    Engaging content creation including copywriting, social media, and digital marketing materials.
+                                </p>
+                            </div>
+                        </article>
+                    </a>
+                    
+                    <a href="https://drive.google.com/file/d/18m7DtO-0wTnApNl_t4CwcsxCs-8wuFKU/view?usp=sharing" target="_blank" class="portfolio-item group block">
+                        <article>
+                            <div class="relative overflow-hidden rounded-lg bg-dark-card p-6 transition-transform duration-300 group-hover:scale-105">
+                                <div class="w-full h-48 bg-gradient-to-br from-pink-500 to-rose-500 rounded-lg mb-4 flex items-center justify-center">
+                                    <span class="text-white font-semibold text-lg">Content</span>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Content</h3>
+                                <p class="text-gray-400 text-sm">
+                                    Creative video production and editing for promotional content and presentations.
+                                </p>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Elena Rodriguez - Graphic Designer -->
+            <section class="portfolio-section">
+                <h2 class="text-4xl font-bold mb-8 text-center border-b-2 border-primary-red pb-4 inline-block">
+                    Erlangga Valdhio Putra Sulistio
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <a href="https://www.figma.com/design/3BsDeeGNsjCLDVYCSbPM4p/BMS-HMIT---Basics-of-Design?node-id=0-1&p=f" target="_blank" class="portfolio-item group block">
+                        <article>
+                            <div class="relative overflow-hidden rounded-lg bg-dark-card p-6 transition-transform duration-300 group-hover:scale-105">
+                                <div class="w-full h-48 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-lg mb-4 flex items-center justify-center">
+                                    <span class="text-white font-semibold text-lg">Figma Design</span>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Figma Design</h3>
+                                <p class="text-gray-400 text-sm">
+                                    Interactive prototypes and wireframes created in Figma for modern web applications.
+                                </p>
+                            </div>
+                        </article>
+                    </a>
+                    
+                    <a href="https://github.com" target="_blank" class="portfolio-item group block">
+                        <article>
+                            <div class="relative overflow-hidden rounded-lg bg-dark-card p-6 transition-transform duration-300 group-hover:scale-105">
+                                <div class="w-full h-48 bg-gradient-to-br from-violet-500 to-purple-500 rounded-lg mb-4 flex items-center justify-center">
+                                    <span class="text-white font-semibold text-lg">Website</span>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Website</h3>
+                                <p class="text-gray-400 text-sm">
+                                    Responsive and modern portfolio website with clean design.
+                                </p>
+                            </div>
+                        </article>
+                    </a>
+                    
+                    <a href="https://www.youtube.com" target="_blank" class="portfolio-item group block">
+                        <article>
+                            <div class="relative overflow-hidden rounded-lg bg-dark-card p-6 transition-transform duration-300 group-hover:scale-105">
+                                <div class="w-full h-48 bg-gradient-to-br from-amber-500 to-yellow-500 rounded-lg mb-4 flex items-center justify-center">
+                                    <span class="text-white font-semibold text-lg">Video</span>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Video</h3>
+                                <p class="text-gray-400 text-sm">
+                                    Creative video production and editing for promotional content and presentations.
+                                </p>
+                            </div>
+                        </article>
+                    </a>
+                    
+                    <a href="https://medium.com" target="_blank" class="portfolio-item group block">
+                        <article>
+                            <div class="relative overflow-hidden rounded-lg bg-dark-card p-6 transition-transform duration-300 group-hover:scale-105">
+                                <div class="w-full h-48 bg-gradient-to-br from-rose-500 to-pink-500 rounded-lg mb-4 flex items-center justify-center">
+                                    <span class="text-white font-semibold text-lg">Content</span>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Content</h3>
+                                <p class="text-gray-400 text-sm">
+                                    Engaging content creation including copywriting, social media, and digital marketing materials.
+                                </p>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+            </section>
+
+            <!-- David Kim - Data Scientist -->
+            <section class="portfolio-section">
+                <h2 class="text-4xl font-bold mb-8 text-center border-b-2 border-primary-red pb-4 inline-block">
+                    Moch. Rizki Nasrullah
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <a href="https://www.figma.com/design/3BsDeeGNsjCLDVYCSbPM4p/BMS-HMIT---Basics-of-Design?node-id=0-1&p=f" target="_blank" class="portfolio-item group block">
+                        <article>
+                            <div class="relative overflow-hidden rounded-lg bg-dark-card p-6 transition-transform duration-300 group-hover:scale-105">
+                                <div class="w-full h-48 bg-gradient-to-br from-slate-600 to-gray-700 rounded-lg mb-4 flex items-center justify-center">
+                                    <span class="text-white font-semibold text-lg">Figma Design</span>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Figma Design</h3>
+                                <p class="text-gray-400 text-sm">
+                                    Interactive prototypes and wireframes created in Figma for modern web applications.
+                                </p>
+                            </div>
+                        </article>
+                    </a>
+                    
+                    <a href="https://github.com" target="_blank" class="portfolio-item group block">
+                        <article>
+                            <div class="relative overflow-hidden rounded-lg bg-dark-card p-6 transition-transform duration-300 group-hover:scale-105">
+                                <div class="w-full h-48 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-lg mb-4 flex items-center justify-center">
+                                    <span class="text-white font-semibold text-lg">Website</span>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Website</h3>
+                                <p class="text-gray-400 text-sm">
+                                    Responsive and modern portfolio website with clean design.
+                                </p>
+                            </div>
+                        </article>
+                    </a>
+                    
+                    <a href="https://www.youtube.com" target="_blank" class="portfolio-item group block">
+                        <article>
+                            <div class="relative overflow-hidden rounded-lg bg-dark-card p-6 transition-transform duration-300 group-hover:scale-105">
+                                <div class="w-full h-48 bg-gradient-to-br from-lime-500 to-green-500 rounded-lg mb-4 flex items-center justify-center">
+                                    <span class="text-white font-semibold text-lg">Video</span>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Video</h3>
+                                <p class="text-gray-400 text-sm">
+                                    Creative video production and editing for promotional content and presentations.
+                                </p>
+                            </div>
+                        </article>
+                    </a>
+                    
+                    <a href="https://medium.com" target="_blank" class="portfolio-item group block">
+                        <article>
+                            <div class="relative overflow-hidden rounded-lg bg-dark-card p-6 transition-transform duration-300 group-hover:scale-105">
+                                <div class="w-full h-48 bg-gradient-to-br from-red-500 to-pink-500 rounded-lg mb-4 flex items-center justify-center">
+                                    <span class="text-white font-semibold text-lg">Content</span>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Content</h3>
+                                <p class="text-gray-400 text-sm">
+                                    Engaging content creation including copywriting, social media, and digital marketing materials.
+                                </p>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Alex Thompson - Frontend Developer -->
+            <section class="portfolio-section">
+                <h2 class="text-4xl font-bold mb-8 text-center border-b-2 border-primary-red pb-4 inline-block">
+                    Raya Ahmad Syarif
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <a href="https://www.figma.com/design/3BsDeeGNsjCLDVYCSbPM4p/BMS-HMIT---Basics-of-Design?node-id=0-1&p=f" target="_blank" class="portfolio-item group block">
+                        <article>
+                            <div class="relative overflow-hidden rounded-lg bg-dark-card p-6 transition-transform duration-300 group-hover:scale-105">
+                                <div class="w-full h-48 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg mb-4 flex items-center justify-center">
+                                    <span class="text-white font-semibold text-lg">Figma Design</span>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Figma Design</h3>
+                                <p class="text-gray-400 text-sm">
+                                    Interactive prototypes and wireframes created in Figma for modern web applications.
+                                </p>
+                            </div>
+                        </article>
+                    </a>
+                    
+                    <a href="https://github.com" target="_blank" class="portfolio-item group block">
+                        <article>
+                            <div class="relative overflow-hidden rounded-lg bg-dark-card p-6 transition-transform duration-300 group-hover:scale-105">
+                                <div class="w-full h-48 bg-gradient-to-br from-green-600 to-emerald-600 rounded-lg mb-4 flex items-center justify-center">
+                                    <span class="text-white font-semibold text-lg">Website</span>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Website</h3>
+                                <p class="text-gray-400 text-sm">
+                                    Responsive and modern portfolio website with clean design.
+                                </p>
+                            </div>
+                        </article>
+                    </a>
+                    
+                    <a href="https://www.youtube.com" target="_blank" class="portfolio-item group block">
+                        <article>
+                            <div class="relative overflow-hidden rounded-lg bg-dark-card p-6 transition-transform duration-300 group-hover:scale-105">
+                                <div class="w-full h-48 bg-gradient-to-br from-purple-600 to-violet-600 rounded-lg mb-4 flex items-center justify-center">
+                                    <span class="text-white font-semibold text-lg">Video</span>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Video</h3>
+                                <p class="text-gray-400 text-sm">
+                                    Creative video production and editing for promotional content and presentations.
+                                </p>
+                            </div>
+                        </article>
+                    </a>
+                    
+                    <a href="https://medium.com" target="_blank" class="portfolio-item group block">
+                        <article>
+                            <div class="relative overflow-hidden rounded-lg bg-dark-card p-6 transition-transform duration-300 group-hover:scale-105">
+                                <div class="w-full h-48 bg-gradient-to-br from-orange-600 to-red-600 rounded-lg mb-4 flex items-center justify-center">
+                                    <span class="text-white font-semibold text-lg">Content</span>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Content</h3>
+                                <p class="text-gray-400 text-sm">
+                                    Engaging content creation including copywriting, social media, and digital marketing materials.
+                                </p>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Maya Patel - Backend Developer -->
+            <section class="portfolio-section">
+                <h2 class="text-4xl font-bold mb-8 text-center border-b-2 border-primary-red pb-4 inline-block">
+                    Tiara Fatimah Azzahra
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <a href="https://www.figma.com/design/3BsDeeGNsjCLDVYCSbPM4p/BMS-HMIT---Basics-of-Design?node-id=0-1&p=f" target="_blank" class="portfolio-item group block">
+                        <article>
+                            <div class="relative overflow-hidden rounded-lg bg-dark-card p-6 transition-transform duration-300 group-hover:scale-105">
+                                <div class="w-full h-48 bg-gradient-to-br from-gray-600 to-slate-700 rounded-lg mb-4 flex items-center justify-center">
+                                    <span class="text-white font-semibold text-lg">Figma Design</span>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Figma Design</h3>
+                                <p class="text-gray-400 text-sm">
+                                    Interactive prototypes and wireframes created in Figma for modern web applications.
+                                </p>
+                            </div>
+                        </article>
+                    </a>
+                    
+                    <a href="https://github.com/tiarafthzzhr/BMS-IT-2025" target="_blank" class="portfolio-item group block">
+                        <article>
+                            <div class="relative overflow-hidden rounded-lg bg-dark-card p-6 transition-transform duration-300 group-hover:scale-105">
+                                <div class="w-full h-48 bg-gradient-to-br from-emerald-600 to-teal-600 rounded-lg mb-4 flex items-center justify-center">
+                                    <span class="text-white font-semibold text-lg">Website</span>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Website</h3>
+                                <p class="text-gray-400 text-sm">
+                                    Responsive and modern portfolio website with clean design.
+                                </p>
+                            </div>
+                        </article>
+                    </a>
+                    
+                    <a href="https://www.youtube.com" target="_blank" class="portfolio-item group block">
+                        <article>
+                            <div class="relative overflow-hidden rounded-lg bg-dark-card p-6 transition-transform duration-300 group-hover:scale-105">
+                                <div class="w-full h-48 bg-gradient-to-br from-blue-700 to-indigo-700 rounded-lg mb-4 flex items-center justify-center">
+                                    <span class="text-white font-semibold text-lg">Video</span>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Video</h3>
+                                <p class="text-gray-400 text-sm">
+                                    Creative video production and editing for promotional content and presentations.
+                                </p>
+                            </div>
+                        </article>
+                    </a>
+                    
+                    <a href="https://medium.com" target="_blank" class="portfolio-item group block">
+                        <article>
+                            <div class="relative overflow-hidden rounded-lg bg-dark-card p-6 transition-transform duration-300 group-hover:scale-105">
+                                <div class="w-full h-48 bg-gradient-to-br from-rose-600 to-pink-600 rounded-lg mb-4 flex items-center justify-center">
+                                    <span class="text-white font-semibold text-lg">Content</span>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Content</h3>
+                                <p class="text-gray-400 text-sm">
+                                    Engaging content creation including copywriting, social media, and digital marketing materials.
+                                </p>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3 class="footer-heading">Contact Us</h3>
+                <ul class="footer-contact">
+                    <li><a href="mailto:info@kppbms.com">info@kppbms.com</a></li>
+                    <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+                    <li>123 Innovation Street, Tech City</li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <div class="footer-right-align">
+                    <h3 class="footer-heading">Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+    <!-- Mobile menu toggle script -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
