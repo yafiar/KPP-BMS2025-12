@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - BMS 2025</title>
+    
+    <!-- Link to existing stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-red': '#e53935',
+                        'dark-bg': '#000',
+                        'dark-card': '#111',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-dark-bg text-white font-poppins">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">
+            BM<span>S</span>
+        </a>
+        <div class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="about.html" class="text-primary-red">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+        <!-- Page Header -->
+        <header class="text-center mb-16">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+                About Our Team
+            </h1>
+            <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                Meet the talented individuals behind BMS 2025 - a dedicated team of creative professionals 
+                passionate about delivering exceptional digital experiences.
+            </p>
+        </header>
+
+        <!-- About Content -->
+        <section class="max-w-4xl mx-auto">
+            <div class="bg-dark-card rounded-lg p-8 md:p-12 mb-12">
+                <h2 class="text-3xl font-bold mb-6 text-center text-primary-red">Our Mission</h2>
+                <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                    BMS 2025 represents a collaborative effort by talented students and professionals 
+                    who are passionate about creating innovative digital solutions. Our team combines 
+                    diverse skills in design, development, and content creation to deliver projects 
+                    that make a meaningful impact.
+                </p>
+                <p class="text-lg text-gray-300 leading-relaxed">
+                    We believe in the power of teamwork, creativity, and continuous learning. Each 
+                    member brings unique perspectives and expertise to our projects, ensuring that 
+                    we deliver high-quality work that exceeds expectations. Our portfolio showcases 
+                    our commitment to excellence and our dedication to staying at the forefront of 
+                    digital innovation.
+                </p>
+            </div>
+
+            <!-- Team Values -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-dark-card rounded-lg p-6 text-center">
+                    <div class="text-primary-red text-4xl mb-4">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Innovation</h3>
+                    <p class="text-gray-400">
+                        We embrace new technologies and creative approaches to solve complex challenges.
+                    </p>
+                </div>
+                
+                <div class="bg-dark-card rounded-lg p-6 text-center">
+                    <div class="text-primary-red text-4xl mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Collaboration</h3>
+                    <p class="text-gray-400">
+                        We work together seamlessly, combining our strengths to achieve common goals.
+                    </p>
+                </div>
+                
+                <div class="bg-dark-card rounded-lg p-6 text-center">
+                    <div class="text-primary-red text-4xl mb-4">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Excellence</h3>
+                    <p class="text-gray-400">
+                        We strive for the highest quality in everything we create and deliver.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Team Members -->
+            <div class="bg-dark-card rounded-lg p-8">
+                <h2 class="text-3xl font-bold mb-8 text-center text-primary-red">Meet Our Team</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">AY</span>
+                        </div>
+                        <h4 class="font-semibold mb-1">Ahmad Yafi Ar Rizq</h4>
+                        <p class="text-sm text-gray-400">Lead Designer</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">BK</span>
+                        </div>
+                        <h4 class="font-semibold mb-1">Bayu Kurniawan</h4>
+                        <p class="text-sm text-gray-400">Full Stack Developer</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">EV</span>
+                        </div>
+                        <h4 class="font-semibold mb-1">Erlangga Valdhio Putra Sulistio</h4>
+                        <p class="text-sm text-gray-400">Graphic Designer</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-gradient-to-br from-orange-500 to-red-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">MR</span>
+                        </div>
+                        <h4 class="font-semibold mb-1">Moch. Rizki Nasrullah</h4>
+                        <p class="text-sm text-gray-400">Data Scientist</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">RA</span>
+                        </div>
+                        <h4 class="font-semibold mb-1">Raya Ahmad Syarif</h4>
+                        <p class="text-sm text-gray-400">Frontend Developer</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-gradient-to-br from-pink-500 to-rose-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">TF</span>
+                        </div>
+                        <h4 class="font-semibold mb-1">Tiara Fatimah Azzahra</h4>
+                        <p class="text-sm text-gray-400">Backend Developer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3 class="footer-heading">Contact Us</h3>
+                <ul class="footer-contact">
+                    <li><a href="mailto:info@kppbms.com">info@kppbms.com</a></li>
+                    <li><a href="tel:+6231599425154">+62 31-5994251-54</a></li>
+                    <li>Surabaya, Indonesia</li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <div class="footer-right-align">
+                    <h3 class="footer-heading">Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/24it.its/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="facebook.com" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Mobile menu toggle script -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

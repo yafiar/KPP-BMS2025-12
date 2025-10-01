@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - BMS 2025</title>
+    
+    <!-- Link to existing stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-red': '#e53935',
+                        'dark-bg': '#000',
+                        'dark-card': '#111',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-dark-bg text-white font-poppins">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">
+            BM<span>S</span>
+        </a>
+        <div class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="text-primary-red">Contact</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+        <!-- Page Header -->
+        <header class="text-center mb-16">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+                Contact Us
+            </h1>
+            <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                Get in touch with our team. We'd love to hear from you and discuss your project ideas.
+            </p>
+        </header>
+
+        <!-- Contact Form Section -->
+        <section class="max-w-2xl mx-auto">
+            <div class="bg-dark-card rounded-lg p-8 md:p-12">
+                <h2 class="text-3xl font-bold mb-8 text-center text-primary-red">Send us a Message</h2>
+                
+                <form class="space-y-6" action="#" method="POST">
+                    <!-- Name Field -->
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-300 mb-2">
+                            Full Name <span class="text-primary-red">*</span>
+                        </label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            required
+                            class="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg focus:outline-none focus:border-primary-red focus:ring-2 focus:ring-primary-red/20 text-white placeholder-gray-400 transition-colors"
+                            placeholder="Enter your full name"
+                        >
+                    </div>
+
+                    <!-- Email Field -->
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-300 mb-2">
+                            Email Address <span class="text-primary-red">*</span>
+                        </label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required
+                            class="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg focus:outline-none focus:border-primary-red focus:ring-2 focus:ring-primary-red/20 text-white placeholder-gray-400 transition-colors"
+                            placeholder="Enter your email address"
+                        >
+                    </div>
+
+                    <!-- Subject Field -->
+                    <div>
+                        <label for="subject" class="block text-sm font-medium text-gray-300 mb-2">
+                            Subject
+                        </label>
+                        <input 
+                            type="text" 
+                            id="subject" 
+                            name="subject"
+                            class="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg focus:outline-none focus:border-primary-red focus:ring-2 focus:ring-primary-red/20 text-white placeholder-gray-400 transition-colors"
+                            placeholder="What's this about?"
+                        >
+                    </div>
+
+                    <!-- Message Field -->
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-300 mb-2">
+                            Message <span class="text-primary-red">*</span>
+                        </label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            rows="5"
+                            required
+                            class="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg focus:outline-none focus:border-primary-red focus:ring-2 focus:ring-primary-red/20 text-white placeholder-gray-400 transition-colors resize-vertical"
+                            placeholder="Tell us about your project or inquiry..."
+                        ></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="text-center">
+                        <button 
+                            type="submit"
+                            class="btn inline-flex items-center justify-center px-8 py-3 bg-transparent border-2 border-primary-red text-white font-semibold rounded-full hover:bg-primary-red hover:text-white transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary-red/50"
+                        >
+                            <i class="fas fa-paper-plane mr-2"></i>
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Contact Information -->
+        <section class="max-w-4xl mx-auto mt-16">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-dark-card rounded-lg p-6 text-center">
+                    <div class="text-primary-red text-3xl mb-4">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Email Us</h3>
+                    <p class="text-gray-400">info@bms2025.com</p>
+                </div>
+                
+                <div class="bg-dark-card rounded-lg p-6 text-center">
+                    <div class="text-primary-red text-3xl mb-4">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Call Us</h3>
+                    <p class="text-gray-400">+1 (234) 567-890</p>
+                </div>
+                
+                <div class="bg-dark-card rounded-lg p-6 text-center">
+                    <div class="text-primary-red text-3xl mb-4">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Visit Us</h3>
+                    <p class="text-gray-400">123 Innovation Street, Tech City</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3 class="footer-heading">Contact Us</h3>
+                <ul class="footer-contact">
+                    <li><a href="mailto:info@kppbms.com">info@kppbms.com</a></li>
+                    <li><a href="tel:+6231599425154">+62 31-5994251-54</a></li>
+                    <li>Surabaya, Indonesia</li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <div class="footer-right-align">
+                    <h3 class="footer-heading">Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/24it.its/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="facebook.com" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Mobile menu toggle script -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
