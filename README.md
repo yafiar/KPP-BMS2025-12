@@ -22,6 +22,5 @@
 - https://figma.com/design/U7FnLrAeDloqFaLt7zq8qH/Untitled?node-id=0-1&t=yPZKZXmpfQKcaBRk-1
 
 ## Web
-- https://yafiar.github.io/KPP-BMS2025-12/
 - https://bms-12.vercel.app/
 
